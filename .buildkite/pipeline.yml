@@ -1,5 +1,5 @@
 steps:
 - command: ls
   plugins:
-    - peaudecastor/boost-security-scanner#v0.1.0:
+    - peaudecastor/boost-security-scanner#master:
         api_token: '654k61r72651y5r4e06k351b49zk37o525n4o4m20645a5d2l2'
