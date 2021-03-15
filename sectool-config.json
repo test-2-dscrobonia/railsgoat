@@ -1,0 +1,12 @@
+{
+  "violations-policy": [
+    {
+      "class": "web-app",
+      "rules": {
+        "insecure-crypto-algorithm": "block",
+        "dangerous-function-deserialization": "block",
+        "serialize-option-unsafe": "block"
+      }
+    }
+  ]
+}
