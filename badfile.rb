@@ -1,3 +1,3 @@
 def check_hash(id, hash)
-  hash == id
+  hash = Marshal.load(Base64.decode64(params[:id])) unless params[:id].nil?
 end
