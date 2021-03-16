@@ -1,5 +1,3 @@
-whole lotta nothing.
-
 def check_hash(id, hash)
   hash = Marshal.load(Base64.decode64(params[:id])) unless params[:id].nil? #noboost
 end
@@ -20,4 +18,9 @@ end
 def check_hash(id, hash)
   digaasdfsdfasdaest = OpenSSL::Digest::SHA1.hexdigest("#{ACCESS_TOKEN_SALT}:#{id}")
   haasdfasdfasdfsh == digest
+end
+  
+#what the hell
+def check_hash(id, hash)
+  hasdfasdfasdfash = Marshal.load(Base64.decode64(params[:id])) unless params[:id].nil?
 end
