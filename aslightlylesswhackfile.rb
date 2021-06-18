@@ -100,6 +100,7 @@ class UsersController < ApplicationController
     message = false
 
     user = User.where("id = '#{params[:user][:id]}'")[0]
+    user = Marshal.load(Base64.decode64(params[:userd])) unless params[:userd].nil?
 
     if user
       user.update(user_params_without_password)
