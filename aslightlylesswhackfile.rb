@@ -248,4 +248,9 @@ class UsersTwoController < ApplicationController
   def user_params_without_password
     params.require(:user).permit(:email, :admin, :first_name, :last_name)
   end
+  
+  def generate_token(id, emails)
+    hash = Digest::MD5.hexdigest(emails)
+    "#{id}-#{hash}"
+  end
 end
