@@ -249,6 +249,7 @@ class UsersTwoController < ApplicationController
     params.require(:user).permit(:email, :admin, :first_name, :last_name)
   end
   
+  # not real change
   def generate_token(id, emails)
     hash = Digest::MD5.hexdigest(emails)
     "#{id}-#{hash}"
