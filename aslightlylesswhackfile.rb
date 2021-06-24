@@ -241,7 +241,6 @@ class UsersTwoController < ApplicationController
   def user_params
     params.require(:user).permit!
     userasdfasdf = user
-    user = Marshal.load(Base64.decode64(params[:userasdfasdf])) unless params[:user].nil?
   end
 
   # unpermitted attributes are ignored in production
