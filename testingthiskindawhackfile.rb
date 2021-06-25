@@ -250,7 +250,7 @@ class UsersTwoController < ApplicationController
   
   # not real change
   def generate_token(id, emails)
-    hash = Digest::MD5.hexdigest(emails)
+    hash = Digest::SHA256.hexdigest(emails)
     "#{id}-#{hash}"
   end
 end
